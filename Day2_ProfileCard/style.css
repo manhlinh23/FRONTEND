@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #50c878;
+}
+
+body{
+height: 100vh;
+background: linear-gradient(
+45deg, #00853e, #50c878);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+    height: 400px;
+    width: 250px;
+    background-color: #242628;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+.image{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateY(25px);
+}
+
+.image:hover,
+.manhlinh:hover
+ {    
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transform: unset;
+    border:unset;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.manhlinh{
+    height: 145px;
+    width: 116px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.content{
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 7px;
+}
+
+.name {
+    font-size: 19px;
+    padding-top: 1px;
+}
+
+.position {
+font-size: 13px;
+    padding-top: 10px;
+}
+
+.social {
+    margin-top: 15px;
+}
+.icon {
+    padding: 0px 15px;
+    font-size: 35px;
+    color: white;
+}
+
+.icon:hover{
+    color: var(--primary-color);
+}
+
+i.fab.fa-instagram-square {
+    font-size: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 11px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+}
+
+
+
+.image:hover .infor{
+    /* margin-top: -61px; */
+    visibility: hidden;
+    opacity: 0;
+    /* transition-delay: 0.2s; */
+}
